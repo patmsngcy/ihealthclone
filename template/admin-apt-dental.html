@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>BITBo | iHealth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="" name="description">
     <meta content="Coderthemes" name="author">
    <!-- App favicon -->
    <link rel="shortcut icon" href="../../static/images/brgyms-icon-white.png">
@@ -27,73 +27,92 @@
     <!-- Begin page -->
     <header>
 
-    <div class="wrapper">
-        <!-- ========== Left Sidebar Start ========== -->
-        <div class="leftside-menu">
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="/index" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="../../static/images/ihealth-logo-with-text.png" alt="" height="40">
+                    </span>
+                </a>
+    
+            <!--- Sidemenu -->
+            <ul class="side-nav">
 
-            <!-- LOGO -->
-            <a href="admin-index.php" class="logo text-center logo-light">
-                <span class="logo-lg">
-                    <img src="../../static/images/ihealth-logo-with-text.png" alt="" height="40">
-                </span>
-            </a>
+            <li class="side-nav-title side-nav-item">Menu</li>
 
-            <div class="h-100" id="leftside-menu-container" data-simplebar="">
+                <li class="side-nav-item">
+                    <a href="/index" class="side-nav-link">
+                        <i class="uil-chart-pie"></i>
+                        <span> Dashboard </span>
+                    </a>
+                </li>
 
-                <!--- Sidemenu -->
-                <ul class="side-nav">
+                <li class="side-nav-item">
+                    <a href="/schedule" class="side-nav-link">
+                        <i class="uil-clipboard-alt"></i>
+                        <span> Schedule </span>
+                    </a>
+                </li>
 
-                    <li class="side-nav-title side-nav-item">Menu</li>
+                <li class="side-nav-item">
+                    <a href="/vaccination" class="side-nav-link">
+                        <i class="uil-syringe"></i>
+                        <span> Vaccination Service</span>
+                    </a>
+                </li>
 
-                    <li class="side-nav-item">
-                        <a href="/indexstaff" class="side-nav-link">
-                            <i class="uil-chart-pie"></i>
-                            <span> Dashboard </span>
-                        </a>
-                    </li>
+                <li class="side-nav-item">
+                    <a href="/clinic" class="side-nav-link">
 
-                    <li class="side-nav-item">
-                        <a href="/schedulestaff" class="side-nav-link">
-                            <i class="uil-clipboard-alt"></i>
-                            <span> Schedule </span>
-                        </a>
-                    </li>
+                        <i class="uil-clipboard-alt"></i>
+                        <span> Clinic Service </span>
+                    </a>
+                </li>
 
-                    <li class="side-nav-item">
-                        <a href="/vaccinationstaff" class="side-nav-link">
-                            <i class="uil-syringe"></i>
-                            <span> Vaccination Service</span>
-                        </a>
-                    </li>
+                <li class="side-nav-item">
 
-                    <li class="side-nav-item">
-                        <a href="/clinicstaff" class="side-nav-link">
-                            <i class="uil-clipboard-alt"></i>
-                            <span> Clinic Service </span>
-                        </a>
-                    </li>
+                    <a href="/medicine" class="side-nav-link">
+                        <i class="uil-home-alt"></i>
+                        <span>Medicine</span>
+                    </a>
+                </li>
 
-                    <li class="side-nav-item">
-                        <a href="/dentalstaff" class="side-nav-link">
-                            <i class="mdi mdi-hospital"></i>
-                            <span> Dental Service </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-
-                        <a href="/medicinestaff" class="side-nav-link">
-                            <i class="uil-home-alt"></i>
-                            <span>Medicine Pick-up</span></a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Sidebar -left -->
-
+                        
+                <li class="side-nav-item">
+                    <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
+                        <i class="mdi mdi-hospital mdi-hospital-box"></i>
+                        <span> Appointment Services </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarPages">
+                        <ul class="side-nav-second-level">
+                            <li>
+                                <a href="admin-apt-vax.html">Vaccination Service</a>
+                            </li>
+                            <li>
+                                <a href="admin-apt-clinic.html">Clinic Service</a>
+                            </li>
+                            <li>
+                                <a class="badge-primary-lighten" href="admin-apt-dental.html">Dental Service</a>
+                            </li>
+                            <li>
+                                <a href="admin-apt-medicine.html">Medicine Pickup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-        </div>
-</header>
+    </li>
+</ul>
+        <!-- Sidebar -left -->
+
+    </div>
+    <!-- Left Sidebar End -->
+    </header>
 
 <div class="wrapper">
 
@@ -121,7 +140,7 @@
                                 </span>
                                 <span>
                                     <span class="account-user-name">Juan Dela Cruz</span>
-                                <span class="account-position">Staff</span>
+                                <span class="account-position">Admin</span>
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -227,10 +246,7 @@
                                                     <table class="table table-centered mb-0">
                                                         <thead class="table-light">
                                                             <tr>
-                                                                <th><a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-schedname">Appointment
-                                                                        ID</a></th>
-                                                                <th>Service</th>
+                                                                <th>Appointment ID</th>
                                                                 <th>Name</th>
                                                                 <th>Date</th>
                                                                 <th>Time</th>
@@ -238,29 +254,19 @@
                                                                 <th style="width: 125px;">Action</th>
                                                             </tr>
                                                         </thead>
-                                                            <tbody class="list" id="staff02">
-                                                                {% for dentalstaff in dentalstaff %}
-                                                                <tr>
-                                                                    <td>{{ dentalstaff.appt_id}}</td>
-                                                                    <td>{{ dentalstaff.appt_type}}</td>
-                                                                    <td>{{ dentalstaff.remarks}}</td>
-                                                                    <td>{{ dentalstaff.date}}</td>
-                                                                    <td>{{ dentalstaff.time}}</td>
-                                                                    <td>{{ dentalstaff.status}}</td>
-                                                                    <td class="table-action">
-                                                                        <form class="action-icon">
-                                                                            <button type="button"
-                                                                                class="btn btn-outline-success btn-rounded"><i
-                                                                                    class="dripicons-checkmark"></i></button>
-                                                                            <button type="button"
-                                                                                class="btn btn-outline-danger btn-rounded"><i
-                                                                                    class="mdi mdi-delete"></i></button>
-                                                                        </form>
-                                                                    </td>
-                                                                </tr>
-                                                                {% endfor %}
-                                                            </tbody>
-                                                        
+                                                        <tbody>
+                                                            <tr>
+                                                                
+                                                                <td>
+                                                                    <span class="badge badge-info-lighten rounded-pill">Pending</span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
+                                                                    <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
